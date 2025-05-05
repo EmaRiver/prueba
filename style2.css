@@ -1,0 +1,199 @@
+/* ===== ESTILOS BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #0a0a0f;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* ===== HEADER ===== */
+  .container {
+    background-color: #16161d;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container-co {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c0a062;
+    text-shadow: 0 0 10px rgba(192, 160, 98, 0.5);
+  }
+  
+  /* ===== NAVEGACIÓN ===== */
+  .menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .enlace {
+    color: #cccccc;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+
+  }
+
+  
+  .enlace:hover {
+    color: #ec0909;
+  }
+  .enlace::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c0a062;
+    transition: width 0.3s ease;
+  }
+  
+  .enlace:hover::after {
+    width: 100%;
+  }
+
+/* ===== SECCIÓN DE PRODUCTOS ===== */
+.produ{
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(10, 10, 15, 0.9), rgba(10, 10, 15, 0.9)), 
+                url('Imagenes/Sable.webp') center/cover no-repeat;
+}
+
+.produ h2 {
+    font-size: 2.5rem;
+    color: #c0a062;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.produ p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.product2 {
+    background-color: #16161d;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #24242e;
+}
+
+.product2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(192, 160, 98, 0.2);
+}
+
+.product-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product2:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-info h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.product-info p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    min-height: 60px;
+}
+
+.precio {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #c0a062;
+    margin: 1rem 0;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+    background-color: #c0a062;
+    color: #0a0a0f;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #d4c29c;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(192, 160, 98, 0.5);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #16161d;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #24242e;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+footer p {
+    max-width: 1200px;
+    margin: 0 auto;
+}

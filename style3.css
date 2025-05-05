@@ -1,0 +1,157 @@
+/* ===== ESTILOS BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #0a0a0f;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* ===== HEADER ===== */
+  .container {
+    background-color: #16161d;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container-co {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c0a062;
+    text-shadow: 0 0 10px #c0a06280;
+  }
+  
+  /* ===== NAVEGACIÓN ===== */
+  .menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .enlace {
+    color: #cccccc;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+
+  }
+
+  
+  .enlace:hover {
+    color: #ec0909;
+  }
+  
+  .enlace::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c0a062;
+    transition: width 0.3s ease;
+  }
+  
+  .enlace:hover::after {
+    width: 100%;
+  }
+
+  .contact-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(30, 30, 46, 0.8);
+    border-radius: 10px;
+}
+.titulo {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: 350;
+  color: #c0a06280;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #dad0bb80;
+  text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c0a062;
+}
+
+.contact-info {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer {
+  background-color: #16161d;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #24242e;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+footer p {
+  max-width: 1200px;
+  margin: 0 auto;
+}

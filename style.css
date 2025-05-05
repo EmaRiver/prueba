@@ -1,0 +1,247 @@
+/* ===== ESTILOS BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #0a0a0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.container {
+  background-color: #16161d;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container-co {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c0a062;
+  text-shadow: 0 0 10px rgba(192, 160, 98, 0.5);
+}
+
+/* ===== NAVEGACIÓN ===== */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.enlace {
+  color: #cccccc;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.3rem;
+
+}
+
+
+.enlace:hover {
+  color: #ec0909;
+}
+
+.enlace::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c0a062;
+  transition: width 0.3s ease;
+}
+
+.enlace:hover::after {
+  width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
+.container3 {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 0.8)), 
+              url('Imagenes/espada-laser-star-wars.webp') center/cover no-repeat;
+  padding: 0 2rem;
+}
+
+.contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #c0a062;
+  font-weight: 500;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  color: #cccccc;
+}
+
+/* ===== BOTONES ===== */
+.boton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primario {
+  background-color: #c0a062;
+  color: #0a0a0f;
+  border: none;
+}
+
+.primario:hover {
+  background-color: #d4c29c;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(192, 160, 98, 0.5);
+}
+
+.secundario {
+  background-color: transparent;
+  border: 1px solid #c0a062;
+  color: #c0a062;
+  margin-left: 1rem;
+}
+
+.secundario:hover {
+  background-color: rgba(192, 160, 98, 0.1);
+  color: #ffffff;
+}
+
+/* ===== CARACTERÍSTICAS ===== */
+.carac {
+  padding: 5rem 2rem;
+  background-color: #16161d;
+}
+
+.titulose {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titulose h2 {
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  border-bottom: 1px solid #c0a062;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: #24242e;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.icono {
+  font-size: 2.5rem;
+  color: #c0a062;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-tarjeta {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.texto {
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.pie {
+  background-color: #16161d;
+  padding: 3rem 2rem;
+  border-top: 1px solid #24242e;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.acerca-de {
+  margin-bottom: 1.5rem;
+}
+
+.redes-sociales h3 {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.icono {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.icono:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #24242e;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
